@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device.width, initial-scale=1.0">
+	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<link rel="stylesheet"href="style.css">
+	<title>Cypher</title>
+</head>
+<body>
+
+	<div class="overlay">
+		<h1>CYPHER</h1>
+	</div>
+
+
+	<div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<h4>Cypher.</h4>
+			</div>
+			<div class="links">
+				<a href="#" class="mainLink">Home</a>
+				<a href="#">Commands</a>
+				<a href="#">Dashboard</a>				
+				<a href="#">Support</a>			
+				<a href="#">Invite</a>
+			</div>		
+		</div>
+	</div>
+
+	<!-- LANDING PAGE -->
+
+	<div class="landing">
+		<div class="landingText">
+			<h1>We are <span>Cypher</span></h1>
+			<h3>We're a group of people that love to code<br> in our spare time</h3>
+			<a href="#" class="btn">Add to Discord <i class="fas fa-long-arrow-alt-right"></i> </a>
+		</div>
+		<div class="landingImage">
+			<img src="images/background.png" draggable="false" alt="">
+		</div>
+	</div>
+
+	<!-- ABOUT -->
+
+	<div class="about">
+		<div class="aboutText">
+			<h1>What <span>Cypher</span> offers for you!</h1>
+			<img src="images/undraw_Questions_re_1fy7.svg" class="img">
+		</div>
+		<div class="aboutList">
+			<ol>
+				<li>
+					<a id="btn1" class="active" style="cursor: pointer;">01</a> 
+					<p>Cypher is in state of many <b>Information</b> commands. They allow you to get more information about either Emotes, Members, Servers, Nitro Boosts and more!</p> 
+				</li>
+				<li>
+					<a id="btn2" style="cursor: pointer;">02</a> 
+					<p>If you're unfamiliar with this, we have an unique feature we're pretty sure you haven't seen before. It's called <b>Gradient</b>! It allows you to take two roles and 2 (or more) color hexes and makes a gradient!
+</p> 
+				</li>
+				<li>
+					<a id="btn3" style="cursor: pointer;">03</a> 
+					<p>Not only is our Gradient command unique. We offer <b>Way more unique features</b> and we're still working on more!</p> 
+				</li>
+				<li>
+					<a id="btn4" style="cursor: pointer;">04</a> 
+					<p>You don't need to have a big brain to use our commands or understand them! We made Cypher <b>understandable</b> for everyone!</p> 
+				</li>
+			</ol>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<h2>Cypher.</h2>
+		<div class="footerLinks">
+			<a href="#" class="mainLink">Home</a>
+			<a href="#">Commands</a>
+			<a href="#">Support</a>				
+			<a href="#">Invite</a>
+		</div>
+	</div>
+
+	<script>
+		let img = document.querySelector('.img');
+		let btn1 = document.querySelector('#btn1');
+		let btn2 = document.querySelector('#btn2');
+		let btn3 = document.querySelector('#btn3');
+		let btn4 = document.querySelector('#btn4');
+
+		btn1.addEventListener('click', () => {
+			img.src = "images/undraw_content_team_3epn.svg";
+
+		})
+		btn2.addEventListener('click', () => {
+			img.src = "images/undraw_online_art_bgb4.svg";
+		})
+		btn3.addEventListener('click', () => {
+			img.src = "images/undraw_Scrum_board_re_wk7v.svg";
+		})
+		btn4.addEventListener('click', () => {
+			img.src = "images/undraw_Analysis_re_w2vd.svg";
+		})		
+	</script>
+	<script>
+		$(document).on('click', 'ol li', function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- 	<script type="text/javascript">
+		
+		TweenMax.to(".overlay h1", 2, {
+			opacity: 0,
+			y: -60,
+			ease: Expo.easeInOut
+		})
+
+		TweenMax.to(".overlay", 2, {
+			delay: 0.7,
+			top: "-100%",
+			ease: Expo.easeInOut
+		})
+
+
+	</script> -->
+</body>
+</html>
