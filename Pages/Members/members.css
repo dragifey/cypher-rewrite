@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+html, body{
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+	background-color: #35383D;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	text-decoration: none!important;
+}
+
+:root{
+	--purple: #9D65C9;
+	--big: 20px;
+	--opacity: .6;
+	--bs: 0 19px 38px rgba(0,0,0,0.10);
+	--regular: 18px;
+}
+
+/* nav */
+
+.nav{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 25px 0 25px;
+	background-color: #fff;
+	box-shadow: var(--bs);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav .links .special{
+	background: var(--purple);
+	padding: 10px 20px;
+	text-align: center;
+	margin-left: 10px;
+	color: #fff;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+
+.nav .links .special:hover{
+	color: #111;
+	box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+.nav .links a{
+	margin-right: 25px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
+}
+
+.nav .links{
+	display: flex;
+	justify-content: center;
+}
+
+.nav .links .mainLink{
+	color: var(--purple);
+	font-weight: 700
+}
+
+.nav h4{
+	font-size: 25px;
+	margin-left: 25px;
+	font-weight: 700;
+
+}
+
+
+/* team */
+
+.team{
+	text-align: center;
+}
+
+.inner{
+	max-width: 1200px;
+	overflow: hidden;
+	margin: auto;
+	padding: 40px;
+}
+
+.team h1{
+	font-size: 60px;
+	color: #fff;
+	margin-top: 120px;
+	position: relative;
+}
+
+.member{
+	float: left;
+	width: calc(100% / 3);
+	overflow: hidden;
+	padding: 40px 0; 
+}
+
+.member img{
+
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+.name{
+	margin: 16px 0;
+	color: #fff;
+	font-size: var(--big);
+	font-weight: 700;
+}
+
+.description{
+	opacity: var(--opacity);
+	font-size: var(--regular); 
+	color: #fff;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 600px){
+	.member{
+		width: 100%;
+	}
+}

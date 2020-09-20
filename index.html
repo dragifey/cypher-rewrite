@@ -7,6 +7,7 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	<link rel="stylesheet"href="style.css">
+	<link rel="icon" href="images/cypher.png">
 	<title>Cypher</title>
 </head>
 <body>
@@ -25,8 +26,8 @@
 				<a href="#" class="mainLink">Home</a>
 				<a href="#">Commands</a>
 				<a href="#">Dashboard</a>				
-				<a href="#">Support</a>			
-				<a href="#">Invite</a>
+				<a href="https://discord.gg/sZTzZr7" target="_blank">Support</a>			
+				<a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank" class="special">Invite</a>
 			</div>		
 		</div>
 	</div>
@@ -34,83 +35,72 @@
 	<!-- LANDING PAGE -->
 
 	<div class="landing">
+		
+		<div class="text">
+			<h1 class="title">Make your server <span>Stand Out.</span></h1>
+			<h3 class="description">Cypher offers tons of high multi-functional related commands for your server. </h3>
+			<a href="#" class="button">Add to Discord</a>
+		</div>
+		<div class="logo">
+			<img src="images/svg/book_lover.svg" draggable="false" class="image">
+		</div>
+
+	</div>
+
+<!-- 	<div class="landing">
 		<div class="landingText">
-			<h1>We are <span>Cypher</span></h1>
-			<h3>We're a group of people that love to code<br> in our spare time</h3>
+			<h1>Make your server<br>way better.</h1>
+			<h3>Cypher offers tons of high multi-functional related<br>commands for your server. </h3>
 			<a href="#" class="btn">Add to Discord <i class="fas fa-long-arrow-alt-right"></i> </a>
 		</div>
 		<div class="landingImage">
-			<img src="images/background.png" draggable="false" alt="">
+			<img src="images/svg/book_lover.svg" draggable="false" alt="">
 		</div>
-	</div>
+	</div> -->
 
 	<!-- ABOUT -->
 
 	<div class="about">
 		<div class="aboutText">
-			<h1>What <span>Cypher</span> offers for you!</h1>
-			<img src="images/undraw_Questions_re_1fy7.svg" class="img">
+			<h1>What <span>Cypher</span> has to offer!</h1>
+			<img src="images/svg/scum_board.svg" draggable="false" class="img">
 		</div>
 		<div class="aboutList">
 			<ol>
 				<li>
-					<a id="btn1" class="active" style="cursor: pointer;">01</a> 
+					<span>01</span> 
 					<p>Cypher is in state of many <b>Information</b> commands. They allow you to get more information about either Emotes, Members, Servers, Nitro Boosts and more!</p> 
 				</li>
 				<li>
-					<a id="btn2" style="cursor: pointer;">02</a> 
+					<span>02</span> 
 					<p>If you're unfamiliar with this, we have an unique feature we're pretty sure you haven't seen before. It's called <b>Gradient</b>! It allows you to take two roles and 2 (or more) color hexes and makes a gradient!
 </p> 
 				</li>
 				<li>
-					<a id="btn3" style="cursor: pointer;">03</a> 
+					<span>03</span>  
 					<p>Not only is our Gradient command unique. We offer <b>Way more unique features</b> and we're still working on more!</p> 
 				</li>
 				<li>
-					<a id="btn4" style="cursor: pointer;">04</a> 
+					<span>04</span>  
 					<p>You don't need to have a big brain to use our commands or understand them! We made Cypher <b>understandable</b> for everyone!</p> 
 				</li>
 			</ol>
 		</div>
 	</div>
 
-
-	<div class="footer">
-		<h2>Cypher.</h2>
-		<div class="footerLinks">
-			<a href="#" class="mainLink">Home</a>
-			<a href="#">Commands</a>
-			<a href="#">Support</a>				
-			<a href="#">Invite</a>
+	<div class="banner">
+		<div class="text">
+			<h1>Require Assistance?</h1>
+			<p>Why don’t you check out our Official Discord Server and chat with other members while you’re at it!</p>
+			<a href="#">Join Now!</a>
 		</div>
+<!-- 		<div class="image">
+			<img src="images/svg/undraw_file_searching_duff.svg">
+		</div> -->
 	</div>
 
-	<script>
-		let img = document.querySelector('.img');
-		let btn1 = document.querySelector('#btn1');
-		let btn2 = document.querySelector('#btn2');
-		let btn3 = document.querySelector('#btn3');
-		let btn4 = document.querySelector('#btn4');
 
-		btn1.addEventListener('click', () => {
-			img.src = "images/undraw_content_team_3epn.svg";
 
-		})
-		btn2.addEventListener('click', () => {
-			img.src = "images/undraw_online_art_bgb4.svg";
-		})
-		btn3.addEventListener('click', () => {
-			img.src = "images/undraw_Scrum_board_re_wk7v.svg";
-		})
-		btn4.addEventListener('click', () => {
-			img.src = "images/undraw_Analysis_re_w2vd.svg";
-		})		
-	</script>
-	<script>
-		$(document).on('click', 'ol li', function(){
-			$(this).addClass('active').siblings().removeClass('active')
-		})
-	</script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <!-- 	<script type="text/javascript">
