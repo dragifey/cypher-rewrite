@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device.width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+	<link rel="stylesheet" href="error.css">	
+	<title>Oops!</title>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<h4>Cypher.</h4>
+			</div>
+			<div class="links">
+				<a href="#" class="mainLink">Home</a>
+				<a href="#">Commands</a>
+				<a href="#">Dashboard</a>				
+				<a href="https://discord.gg/sZTzZr7" target="_blank">Support</a>			
+				<a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank" class="special">Invite</a>
+			</div>		
+		</div>
+	</div>
+
+	<div id="landing">
+
+		<div class="text">
+			<h1 class="header">404</h1>
+			<h3 class="title">Page Not Found</h3>
+			<h3 class="description">The page you were looking for doesn’t exist. You may have mistyped the address or the page may have moved.</h3>
+			<a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank" class="button">Return Home</a>
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		<div class="wrapper">
+			<div class="part">
+				<div class="text">
+					<h2 class="title">Cypher.</h2>
+					<p class="description">All Rights reserved &copy; Cypher 2020.</p>
+					<div class="social">
+						<a href="#"><i class="fab fa-github"></i></a>
+						<a href="#"><i class="fas fa-handshake"></i></a>
+						<a href="#"><i class="fa fa-user"></i></a>	
+					</div>
+				</div>
+			</div>
+			<div class="part rows">
+				<div class="row">
+					<p class="title">Product</p>
+					<div class="links">
+						<a href="../../index.html">Home</a>
+						<a href="#">Commands</a>
+						<a href="#">Dashboard</a>
+					</div>
+				</div>
+				<div class="row">
+					<p class="title">Recources</p>
+					<div class="links">
+						<a href="https://discord.gg/sZTzZr7" target="_blank">Support</a>
+						<a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank">Add to Discord</a>
+					</div>
+				</div>
+				<div class="row">
+					<p class="title">Extras</p>
+					<div class="links">
+						<a href="#">Team</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="credits">
+			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="#">MaybeiamDoge#3610</a></p>
+		</div>
+	</div>
+	
+	<script>
+		var container = document.getElementById('landing');
+		window.onmousemove = function(e){
+			var x = - e.clientX/15,
+				y = - e.clientY/15;
+			container.style.backgroundPositionX = x + 'px';
+			container.style.backgroundPositionY = y + 'px';
+
+		}
+	</script>
+
+</body>
+</html>
