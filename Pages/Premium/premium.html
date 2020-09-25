@@ -5,7 +5,20 @@
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" href="premium.css">
+	<link rel="icon" href="images/cypher premium.png">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+	<meta name="twitter:card" content="summary">
+  	<meta property="theme-color" content="#FFCD4B">
+  	<meta name="og:description" content="Cypher Premium allows you to have more entertaining and management wise commands so your server is in top shape at all times">
+  	<meta name="og:title" content="Cypher Premium - Multipurpose Discord Bot">
+  	<meta name="og:site_name" content="Cypher">
+  	<meta name="og:type" content="website">
+  	<meta name="og:image" content="https://i.imgur.com/5wyZD51.png">
+  	<meta name="og:image:width" content="200">
+  	<meta name="og:image:height" content="200">
 
 	<title>Cypher Premium</title>
 </head>
@@ -30,7 +43,7 @@
 	<div class="intro">
 		<div class="overlay"></div>
 
-		<div class="text">
+		<div class="text" data-aos="zoom-in" data-aos-duration="1000">
 			<h2 class="title">Premium</h2>
 			<p>Cypher Premium allows you to have more entertaining and management wise commands so your server is in top shape at all times</p>
 		</div>
@@ -39,14 +52,14 @@
 
 	<section class="prices" id="prices"> 
 		<div class="container">
-			<div class="center">
+			<div class="center" data-aos="zoom-in" data-aos-duration="1000">
 
 				<h5>Cypher Premium</h5>
 				<h3>Current Plans</h3>
 			</div>
 
 
-			<div class="price">
+			<div class="price" data-aos="fade-up" data-aos-duration="1000">
 				<div class="single">
 					<div class="bg"></div>
 					<div class="inner">
@@ -59,7 +72,7 @@
 					</div>
 				</div>
 
-				<div class="single active">
+				<div class="single active" data-aos="fade-up" data-aos-duration="1200">
 
 					<div class="bg"></div><!-- 
 					<div class="rec">
@@ -76,7 +89,7 @@
 					</div>
 				</div>
 
-				<div class="single">
+				<div class="single" data-aos="fade-up" data-aos-duration="1400">
 					<div class="bg"></div>
 					<div class="inner">
 						<i class="fas fa-paper-plane"></i>
@@ -93,17 +106,17 @@
 
 
 	<div class="features">
-		<div class="center">
+		<div class="center" data-aos="zoom-in" data-aos-duration="1000">
 			<h5>Cypher Premium</h5>
 			<h3>Unique Features</h3>
 		</div>
 
 	    <div class="row">
-	        <div class="featimg featimg1">
+	        <div class="featimg featimg1" data-aos="fade-right" data-aos-duration="1000">
 	            <img  class="centerimg" src="images/placeholder.jpg">
 	        </div>
 
-	        <div class="main main1">
+	        <div class="main main1"  data-aos="fade-left" data-aos-duration="1000">
 	            <h2>Bracket Tournament</h2>
 	            <p>
 	            	Members can react to a message to get starting tickets, they can vote for x option and the winning bracket would get x multiplied amount of tickets, no losers brackets, After the final bracket, there's an auto raffle to decide the winner. 
@@ -112,7 +125,7 @@
 	    </div>
 
 	    <div class="row">
-	        <div class="main main2">
+	        <div class="main main2"  data-aos="fade-right" data-aos-duration="1000">
 	            <h2>Watchdog Auto-Moderation</h2>
 	            <p>
 	            	<b>Automute</b>, <b>Autoban</b>, <b>Automessage-delete</b>; depending on specification of server administrators. <b>Alt detection</b> is also included by Administrator preferences, for example, if an admin wants to alert moderators in a logging channel for accounts that are under a day old, the bot @here moderators in a logging channel for accounts that join the server which meet that requirement! 
@@ -125,17 +138,17 @@
 	               </div>
 	        </div>
 
-	        <div class="featimg featimg2">
+	        <div class="featimg featimg2"  data-aos="fade-left" data-aos-duration="1000">
 	            <img  class="centerimg img" src="images/placeholder.jpg">
 	        </div>
 	    </div>
 	    
 	    <div class="row">
-	        <div class="featimg featimg1">
+	        <div class="featimg featimg1"  data-aos="fade-right" data-aos-duration="1000">
 	            <img  class="centerimg" src="images/placeholder.jpg">
 	        </div>
 
-	        <div class="main main1">
+	        <div class="main main1"  data-aos="fade-left" data-aos-duration="1000">
 	            <h2>Newsletter</h2>
 	            <p>
 	            	Administrators can specify a role which the bot will DM with the message you have posted with that command, the users that have the role will have to confirm to receive the newsletters and agree to get messages from it, the person writing the message and the server it is from will also be notified in the message,
@@ -237,7 +250,10 @@
 		</div>
 	</div>
 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="script.js"></script>
-
+	<script>
+  		AOS.init();
+	</script>
 </body>
 </html>
