@@ -43,3 +43,22 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 		$(document).on('click', '.buttons a', function(){
 			$(this).addClass('active').siblings().removeClass('active')
 		})	
+
+
+TweenMax.to(".loader h1", 2, {
+ 	opacity: 0,
+ 	y: -60,
+ 	ease: Expo.easeInOut
+ 	})
+
+TweenMax.to(".loader p", 2, {
+ 	opacity: 0,
+ 	y: -60,
+ 	ease: Expo.easeInOut
+ 	})
+
+TweenMax.to(".loader", 2, {
+ 	delay: 0.1,
+ 	top: "-100%",
+ 	ease: Expo.easeInOut
+ 	})
