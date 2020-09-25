@@ -577,6 +577,17 @@ li .number{
 	font-weight: 600;
 }
 
+@keyframes move{
+	0%{
+		transform: translateX(0px);		
+	}
+	50%{
+		transform: translateX(-20px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
 
 @media only screen and (max-width: 991px){
 	.nav{
