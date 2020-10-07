@@ -4,10 +4,26 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	<link rel="stylesheet" href="commands.css">	
 	<title>Cypher - Commands</title>
+
+	<meta name="twitter:card" content="summary">
+  	<meta property="theme-color" content="#9D65C9">
+  	<meta name="og:description" content="Check all Cypher's commands.">
+  	<meta name="og:title" content="Cypher - Commands">
+  	<meta name="og:site_name" content="Cypher">
+  	<meta name="og:type" content="website">
+  	<meta name="og:image" content="https://i.imgur.com/QbQSpEh.png">
+  	<meta name="og:image:width" content="200">
+  	<meta name="og:image:height" content="200">
+
 </head>
 <body>
+
+	<!-- <div class="overlay">
+		<h1>CYPHER</h1>
+	</div> -->	
 
 	<div class="wrapper">
 		<div class="nav">
@@ -24,9 +40,153 @@
 		</div>
 	</div>
 
-	<div class="intro">
-	</div>	
+<div class="commands">
 
-	<script src="script.js"></script>
+	<h2 class="title">Commands</h2>
+
+	<div id="categories">
+	  <button class="btn active" onclick="filterSelection('all')"> All</button>
+	  <button class="btn" onclick="filterSelection('mod')"> Moderation</button>
+	  <button class="btn" onclick="filterSelection('management')"> Management</button>
+	  <button class="btn" onclick="filterSelection('fun')"> Fun</button>
+	  <button class="btn" onclick="filterSelection('util')"> Utility</button>
+	  <button class="btn premium" onclick="filterSelection('premium')"> Premium</button>
+	</div>
+		
+
+	<div class="container">
+
+
+		<!-- moderation -->
+
+		  <div class="command mod">
+				<div class="item">
+					<div class="header">
+						<i class="fas fa-angle-right"></i>
+						<h4>.help</h4>
+					</div>
+					<div class="body">
+						<div class="content">
+							<p>
+								Cypher Premium allows you to get next-level features in your community. It gives you the opportunity to actually have fun in your community by having <b>Tournaments</b>, <b>"Rigged" Giveaways</b> and so much more, just for a cheap price!
+							</p>
+						</div>
+					</div>
+				</div>  	
+		  </div>
+
+
+		  <!-- management -->
+
+		  <div class="command management">
+				<div class="item">
+					<div class="header">
+						<i class="fas fa-angle-right"></i>
+						<h4>.savestate</h4>
+					</div>
+					<div class="body">
+						<div class="content">
+							<p>
+								Cypher Premium allows you to get next-level features in your community. It gives you the opportunity to actually have fun in your community by having <b>Tournaments</b>, <b>"Rigged" Giveaways</b> and so much more, just for a cheap price!
+							</p>
+						</div>
+					</div>
+				</div>  	
+		  </div>
+		
+
+		  <!-- fun -->
+
+		  <div class="command fun">
+				<div class="item">
+					<div class="header">
+						<i class="fas fa-angle-right"></i>
+						<h4>.cowboy</h4>
+					</div>
+					<div class="body">
+						<div class="content">
+							<p>
+								Cypher Premium allows you to get next-level features in your community. It gives you the opportunity to actually have fun in your community by having <b>Tournaments</b>, <b>"Rigged" Giveaways</b> and so much more, just for a cheap price!
+							</p>
+						</div>
+					</div>
+				</div>  	
+		  </div>
+
+
+		  <!-- util -->
+		
+		  <div class="command util">
+				<div class="item">
+					<div class="header">
+						<i class="fas fa-angle-right"></i>
+						<h4>.topic</h4>
+					</div>
+					<div class="body">
+						<div class="content">
+							<p>
+								Cypher Premium allows you to get next-level features in your community. It gives you the opportunity to actually have fun in your community by having <b>Tournaments</b>, <b>"Rigged" Giveaways</b> and so much more, just for a cheap price!
+							</p>
+						</div>
+					</div>
+				</div>  	
+		  </div>
+
+
+		  <!-- premium -->
+		
+		  <div class="command premium">
+				<div class="item">
+					<div class="header">
+						<i class="fas fa-angle-right"></i>
+						<h4>.newsletter</h4>
+						<i class="fas fa-star right"></i>
+					</div>
+					<div class="body">
+						<div class="content">
+							<p>
+								Cypher Premium allows you to get next-level features in your community. It gives you the opportunity to actually have fun in your community by having <b>Tournaments</b>, <b>"Rigged" Giveaways</b> and so much more, just for a cheap price!
+							</p>
+						</div>
+					</div>
+				</div>  	
+		  </div>
+	</div>
+</div>
+
+	<div class="footer">
+		<!-- up-sec -->
+		<div class="up-section">
+			<div class="part">
+				<a href="#" class="f-logo">Cypher.</a>
+				<p class="description">All Rights reserved <b>&copy; Cypher 2020</b>.</p>
+				<div class="social">
+					<a href="https://top.gg/bot/698234168785764432" target="_blank"><i class="far fa-star"></i></a>
+					<a href="https://discord.gg/sZTzZr7" target="_blank"><i class="far fa-question-circle"></i></a>
+				</div>
+			</div>
+			<ul>
+				<h1>Product</h1>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Commands</a></li>
+				<li><a href="#">Dashboard</a></li>
+			</ul>
+			<ul>
+				<h1>Recourses</h1>
+				<li><a href="#">Support</a></li>
+				<li><a href="https://cypherbot.org/invite" target="_blank">Add to Discord</a></li>
+			</ul>
+			<ul>
+				<h1>Extras</h1>
+				<li><a href="#">Team</a></li>
+			</ul>
+		</div>
+		<div class="credits">
+			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="https://matthewhayward.co.uk/" target="_blank">MaybeiamDoge#3610</a></p>
+		</div>
+	</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>

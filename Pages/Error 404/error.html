@@ -20,7 +20,7 @@
 				<a href="#">Commands</a>
 				<a href="#">Dashboard</a>				
 				<a href="https://discord.gg/sZTzZr7" target="_blank">Support</a>			
-				<a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank" class="special">Invite</a>
+				<a href="https://cypherbot.org/invite" target="_blank" class="special">Invite</a>
 			</div>		
 		</div>
 	</div>
@@ -31,64 +31,65 @@
 			<h1 class="header">404</h1>
 			<h3 class="title">Page Not Found</h3>
 			<h3 class="description">The page you were looking for doesn’t exist. You may have mistyped the address or the page may have moved.</h3>
-			<a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank" class="button">Return Home</a>
+			<a href="../../index.html" class="button">Return Home</a>
 		</div>
 
 	</div>
 
 
 	<div class="footer">
-		<div class="wrapper">
+		<!-- up-sec -->
+		<div class="up-section">
 			<div class="part">
-				<div class="text">
-					<h2 class="title">Cypher.</h2>
-					<p class="description">All Rights reserved &copy; Cypher 2020.</p>
-					<div class="social">
-						<a href="#"><i class="fab fa-github"></i></a>
-						<a href="#"><i class="fas fa-handshake"></i></a>
-						<a href="#"><i class="fa fa-user"></i></a>	
-					</div>
+				<a href="#" class="f-logo">Cypher.</a>
+				<p class="description">All Rights reserved <b>&copy; Cypher 2020</b>.</p>
+				<div class="social">
+					<a href="https://top.gg/bot/698234168785764432" target="_blank"><i class="far fa-star"></i></a>
+					<a href="https://discord.gg/sZTzZr7" target="_blank"><i class="far fa-question-circle"></i></a>
 				</div>
 			</div>
-			<div class="part rows">
-				<div class="row">
-					<p class="title">Product</p>
-					<div class="links">
-						<a href="../../index.html">Home</a>
-						<a href="#">Commands</a>
-						<a href="#">Dashboard</a>
-					</div>
-				</div>
-				<div class="row">
-					<p class="title">Recources</p>
-					<div class="links">
-						<a href="https://discord.gg/sZTzZr7" target="_blank">Support</a>
-						<a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank">Add to Discord</a>
-					</div>
-				</div>
-				<div class="row">
-					<p class="title">Extras</p>
-					<div class="links">
-						<a href="#">Team</a>
-					</div>
-				</div>
-			</div>
+			<ul>
+				<h1>Product</h1>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Commands</a></li>
+				<li><a href="#">Dashboard</a></li>
+			</ul>
+			<ul>
+				<h1>Recourses</h1>
+				<li><a href="#">Support</a></li>
+				<li><a href="https://cypherbot.org/invite" target="_blank">Add to Discord</a></li>
+			</ul>
+			<ul>
+				<h1>Extras</h1>
+				<li><a href="#">Team</a></li>
+			</ul>
 		</div>
 		<div class="credits">
-			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="#">MaybeiamDoge#3610</a></p>
+			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="https://matthewhayward.co.uk/" target="_blank">MaybeiamDoge#3610</a></p>
 		</div>
 	</div>
 	
 	<script>
 		var container = document.getElementById('landing');
 		window.onmousemove = function(e){
-			var x = - e.clientX/15,
-				y = - e.clientY/15;
+			var x = - e.clientX/95,
+				y = - e.clientY/95;
 			container.style.backgroundPositionX = x + 'px';
 			container.style.backgroundPositionY = y + 'px';
 
 		}
 	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
+	<script type="text/javascript">
+		gsap.from('.nav h4', {opacity: 0, duration:0.70, y:10})
+		gsap.from('.nav .links a', {opacity: 0, duration:0.40, y:10, stagger: 0.12})
+
+		// intro	
+		gsap.from('#landing .text .header', {opacity: 0, y:-30})
+		gsap.from('#landing .text .title', {opacity: 0, delay: 0.2, y:-30})
+		gsap.from('#landing .text .description', {opacity: 0, delay: 0.4, y:-30})
+		gsap.from('#landing .text .button', {opacity: 0, delay: 0.6, y:-30})
+	</script>
 </body>
 </html>

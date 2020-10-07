@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" href="premium.css">
-	<link rel="icon" href="images/cypher premium.png">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="icon" href="images/cypher premium2.png">
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
@@ -24,10 +23,9 @@
 </head>
 <body>
 
-	<div class="loader">
+<!-- 	<div class="loader">
 		<h1>CYPHER PREMIUM</h1>
-		<p>Preparing coffee..</p>
-	</div>	
+	</div>	 -->
 
 	<div class="wrapper">
 		<div class="nav">
@@ -39,7 +37,7 @@
 				<a href="#">Commands</a>
 				<a href="#">Dashboard</a>				
 				<a href="https://discord.gg/sZTzZr7" target="_blank">Support</a>			
-				<a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank" class="special">Invite</a>
+				<a href="https://cypherbot.org/invite" target="_blank" class="special">Invite</a>
 			</div>		
 		</div>
 	</div>
@@ -48,7 +46,7 @@
 	<div class="intro">
 		<div class="overlay"></div>
 
-		<div class="text" data-aos="zoom-in" data-aos-duration="1000">
+		<div class="text" data-aos="zoom-in">
 			<h2 class="title">Premium</h2>
 			<p>Cypher Premium allows you to have more entertaining and management wise commands so your server is in top shape at all times</p>
 		</div>
@@ -57,14 +55,14 @@
 
 	<section class="prices" id="prices"> 
 		<div class="container">
-			<div class="center" data-aos="zoom-in" data-aos-duration="1000">
+			<div class="center">
 
 				<h5>Cypher Premium</h5>
 				<h3>Current Plans</h3>
 			</div>
 
 
-			<div class="price" data-aos="fade-up" data-aos-duration="1000">
+			<div class="price">
 				<div class="single">
 					<div class="bg"></div>
 					<div class="inner">
@@ -73,16 +71,13 @@
 						<p>
 							Get Cypher Premium on <b>1</b> server!
 						</p>
-						<a href="#" class="order">Subscribe</a>
+						<a onclick="toggle()" class="order">Subscribe</a>
 					</div>
 				</div>
 
-				<div class="single active" data-aos="fade-up" data-aos-duration="1200">
+				<div class="single active">
 
-					<div class="bg"></div><!-- 
-					<div class="rec">
-						<h5>reccomended</h5>
-					</div> -->
+					<div class="bg"></div>
 					<div class="inner">
 
 						<i class="fas fa-paper-plane"></i>
@@ -90,11 +85,11 @@
 						<p>
 							Get Cypher Premium on <b>1</b> server!
 						</p>
-						<a href="#" class="order">Subscribe</a>
+						<a class="order" onclick="toggle()">Subscribe</a>
 					</div>
 				</div>
 
-				<div class="single" data-aos="fade-up" data-aos-duration="1400">
+				<div class="single">
 					<div class="bg"></div>
 					<div class="inner">
 						<i class="fas fa-paper-plane"></i>
@@ -102,26 +97,35 @@
 						<p>
 							Get Cypher Premium on <b>1</b> server!
 						</p>
-						<a href="#" class="order">Subscribe</a>
+						<a onclick="toggle()" class="order">Subscribe</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<div id="popup">
+		<h2>Confirmation</h2>
+		<p>Are you sure you want to subscribe to the <b><span>$9.99/month</span></b> plan?</p>
+		<div class="checkout">
+			<a href="https://www.youtube.com/watch?v=yll-DQxH7co" target="_blank" class="payment">Checkout</a>	
+			<a onclick="toggle()" class="close">Close</a>
+		</div>
+	</div>
+
 
 	<div class="features">
-		<div class="center" data-aos="zoom-in" data-aos-duration="1000">
+		<div class="center">
 			<h5>Cypher Premium</h5>
 			<h3>Unique Features</h3>
 		</div>
 
 	    <div class="row">
-	        <div class="featimg featimg1" data-aos="fade-right" data-aos-duration="1000">
-	            <img  class="centerimg" src="images/placeholder.jpg">
+	        <div class="featimg featimg1">
+	            <img  class="centerimg" src="images/svg/placeholder.svg">
 	        </div>
 
-	        <div class="main main1"  data-aos="fade-left" data-aos-duration="1000">
+	        <div class="main main1">
 	            <h2>Bracket Tournament</h2>
 	            <p>
 	            	Members can react to a message to get starting tickets, they can vote for x option and the winning bracket would get x multiplied amount of tickets, no losers brackets, After the final bracket, there's an auto raffle to decide the winner. 
@@ -130,7 +134,7 @@
 	    </div>
 
 	    <div class="row">
-	        <div class="main main2"  data-aos="fade-right" data-aos-duration="1000">
+	        <div class="main main2">
 	            <h2>Watchdog Auto-Moderation</h2>
 	            <p>
 	            	<b>Automute</b>, <b>Autoban</b>, <b>Automessage-delete</b>; depending on specification of server administrators. <b>Alt detection</b> is also included by Administrator preferences, for example, if an admin wants to alert moderators in a logging channel for accounts that are under a day old, the bot @here moderators in a logging channel for accounts that join the server which meet that requirement! 
@@ -143,17 +147,17 @@
 	               </div>
 	        </div>
 
-	        <div class="featimg featimg2"  data-aos="fade-left" data-aos-duration="1000">
-	            <img  class="centerimg img" src="images/placeholder.jpg">
+	        <div class="featimg featimg2">
+	            <img  class="centerimg img" src="images/svg/placeholder.svg">
 	        </div>
 	    </div>
 	    
 	    <div class="row">
-	        <div class="featimg featimg1"  data-aos="fade-right" data-aos-duration="1000">
-	            <img  class="centerimg" src="images/placeholder.jpg">
+	        <div class="featimg featimg1">
+	            <img  class="centerimg" src="images/svg/placeholder.svg">
 	        </div>
 
-	        <div class="main main1"  data-aos="fade-left" data-aos-duration="1000">
+	        <div class="main main1">
 	            <h2>Newsletter</h2>
 	            <p>
 	            	Administrators can specify a role which the bot will DM with the message you have posted with that command, the users that have the role will have to confirm to receive the newsletters and agree to get messages from it, the person writing the message and the server it is from will also be notified in the message,
@@ -255,10 +259,46 @@
 		</div>
 	</div>
 
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<div class="footer">
+		<div class="up-section">
+			<div class="part">
+				<a href="#" class="f-logo">Cypher.</a>
+				<p class="description">All Rights reserved <b>&copy; Cypher 2020</b>.</p>
+				<div class="social">
+					<a href="#"><i class="fa fa-user"></i></a>
+					<a href="#"><i class="fa fa-user"></i></a>
+				</div>
+			</div>
+			<ul>
+				<h1>Product</h1>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Commands</a></li>
+				<li><a href="#">Dashboard</a></li>
+			</ul>
+			<ul>
+				<h1>Recourses</h1>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Add to Discord</a></li>
+			</ul>
+			<ul>
+				<h1>Extras</h1>
+				<li><a href="#">Team</a></li>
+			</ul>
+		</div>
+		<div class="credits">
+			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="#">MaybeiamDoge#3610</a></p>
+		</div>
+	</div>
+
 	<script src="script.js"></script>
 	<script>
-  		AOS.init();
+		function toggle(){
+			var blur = document.getElementById('prices');
+			blur.classList.toggle('active');
+			var popup = document.getElementById('popup');
+			popup.classList.toggle('active');
+
+		}
 	</script>
 </body>
 </html>
