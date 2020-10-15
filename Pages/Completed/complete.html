@@ -4,27 +4,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>		  		
 	<link rel="stylesheet" href="complete.css">
 	<title>Thank you!</title>
 </head>
 <body>
 
-	<div class="wrapper">
-		<div class="nav">
-			<div class="logo">
-				<h4>Cypher.</h4>
-			</div>
-			<div class="links">
-				<a href="../../index.html" class="mainLink">Home</a>
-				<a href="#">Commands</a>
-				<a href="../Premium/premium.html">Premium</a>
-				<a href="#">Dashboard</a>				
-				<a href="https://discord.gg/sZTzZr7" target="_blank">Support</a>			
-				<a href="https://cypherbot.org/invite" target="_blank" class="special">Invite</a>
+        <div class="wrapper">
+            <div class="nav grid">
+                <div>
+                    <a href="#" class="logo">Cypher</a>
+                </div>
 
-			</div>		
-		</div>
-	</div>
+                <div class="menu" id="nav-menu">
+                    <ul class="list">
+                        <li class="item"><a href="#" class="link active">Home</a></li>
+                        <li class="item"><a href="#" class="link">Commands</a></li>
+                        <li class="item"><a href="Pages/Premium/premium.html" class="link">Premium</a></li>
+                        <li class="item"><a href="https://discord.gg/sZTzZr7" target="_blank" class="link">Support</a></li>
+                        <li class="item"><a href="https://cypherbot.org/invite" target="_blank" class="link">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
 
 	<div class="landing">
 		
@@ -76,6 +82,32 @@
 			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="#">MaybeiamDoge#3610</a></p>
 		</div>
 	</div>
+	<script type="text/javascript">
+	const showMenu = (toggleId, navId) =>{
+	    const toggle = document.getElementById(toggleId),
+	    nav = document.getElementById(navId)
 
+	    if(toggle && nav){
+	        toggle.addEventListener('click', ()=>{
+	            nav.classList.toggle('show')
+	        })
+	    }
+	}
+	showMenu('nav-toggle','nav-menu')
+
+	/*===== ACTIVE AND REMOVE MENU =====*/
+	const navLink = document.querySelectorAll('.link');   
+
+	function linkAction(){
+	  /*Active link*/
+	  navLink.forEach(n => n.classList.remove('active'));
+	  this.classList.add('active');
+	  
+	  /*Remove menu mobile*/
+	  const navMenu = document.getElementById('nav-menu')
+	  navMenu.classList.remove('show')
+	}
+	navLink.forEach(n => n.addEventListener('click', linkAction));			
+	</script>
 </body>
 </html>

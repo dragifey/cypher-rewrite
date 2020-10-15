@@ -4,26 +4,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" href="error.css">	
 	<title>Oops!</title>
 </head>
 <body>
 
-	<div class="wrapper">
-		<div class="nav">
-			<div class="logo">
-				<h4>Cypher.</h4>
-			</div>
-			<div class="links">
-				<a href="#" class="mainLink">Home</a>
-				<a href="#">Commands</a>
-				<a href="#">Dashboard</a>				
-				<a href="https://discord.gg/sZTzZr7" target="_blank">Support</a>			
-				<a href="https://cypherbot.org/invite" target="_blank" class="special">Invite</a>
-			</div>		
-		</div>
-	</div>
+        <div class="wrapper">
+            <div class="nav grid">
+                <div>
+                    <a href="#" class="logo">Cypher</a>
+                </div>
+
+                <div class="menu" id="nav-menu">
+                    <ul class="list">
+                        <li class="item"><a href="#" class="link active">Home</a></li>
+                        <li class="item"><a href="#" class="link">Commands</a></li>
+                        <li class="item"><a href="Pages/Premium/premium.html" class="link">Premium</a></li>
+                        <li class="item"><a href="https://discord.gg/sZTzZr7" target="_blank" class="link">Support</a></li>
+                        <li class="item"><a href="https://cypherbot.org/invite" target="_blank" class="link">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
 
 	<div id="landing">
 
@@ -91,5 +99,6 @@
 		gsap.from('#landing .text .description', {opacity: 0, delay: 0.4, y:-30})
 		gsap.from('#landing .text .button', {opacity: 0, delay: 0.6, y:-30})
 	</script>
+	<script src="../../Js/script.js"></script>
 </body>
 </html>
