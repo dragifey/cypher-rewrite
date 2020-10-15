@@ -9,7 +9,7 @@
 }
 
 body{
-  background: url(images/bg.png);
+  background: url(../images/bg.png);
   background-attachment: fixed;
 }
 
@@ -120,7 +120,7 @@ html{
 
 /*Active menu*/
 .actives{
-  color: var(--purple);  
+  color: var(--purple);
 }
 
 .show{
@@ -151,7 +151,7 @@ html{
   }
   .actives{
     color: var(--purple);
-    font-weight: 700;  
+    font-weight: 700;
   }
 }
 
@@ -290,9 +290,9 @@ html{
 }
 
 .item .body{
-  transition: max-height 0.3s ease-out; 
+  transition: max-height 0.3s ease-out;
   max-height: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .item .body .content{
@@ -422,7 +422,7 @@ html{
 		align-items: center;
 		display: inline-block;
 		text-align: center;
-	}	
+	}
 	.commands{
 		margin-top: 150px;
 		padding: 10px;

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<!--suppress HtmlUnknownTag -->
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>	
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
-	<link rel="stylesheet" href="error.css">	
+	<link rel="stylesheet" href="error.css">
 	<title>Oops!</title>
 </head>
 <body>
@@ -14,16 +15,16 @@
         <div class="wrapper">
             <div class="nav grid">
                 <div>
-                    <a href="#" class="logo">Cypher</a>
+                    <a href="/" class="logo">Cypher</a>
                 </div>
 
                 <div class="menu" id="nav-menu">
                     <ul class="list">
-                        <li class="item"><a href="#" class="link active">Home</a></li>
-                        <li class="item"><a href="#" class="link">Commands</a></li>
-                        <li class="item"><a href="Pages/Premium/premium.html" class="link">Premium</a></li>
-                        <li class="item"><a href="https://discord.gg/sZTzZr7" target="_blank" class="link">Support</a></li>
-                        <li class="item"><a href="https://cypherbot.org/invite" target="_blank" class="link">Support</a></li>
+                        <li class="item"><a href="/" class="link">Home</a></li>
+                        <li class="item"><a href="/commands" class="link">Commands</a></li>
+                        <li class="item"><a href="/premium/" class="link">Premium</a></li>
+                        <li class="item"><a href="//cypherbot.org/support" target="_blank" class="link">Support</a></li>
+                        <li class="item"><a href="https://cypherbot.org/invite" target="_blank" class="link">Invite</a></li>
                     </ul>
                 </div>
 
@@ -39,7 +40,7 @@
 			<h1 class="header">404</h1>
 			<h3 class="title">Page Not Found</h3>
 			<h3 class="description">The page you were looking for doesn’t exist. You may have mistyped the address or the page may have moved.</h3>
-			<a href="../../index.html" class="button">Return Home</a>
+			<a href="../index.html" class="button">Return Home</a>
 		</div>
 
 	</div>
@@ -76,12 +77,12 @@
 			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="https://matthewhayward.co.uk/" target="_blank">MaybeiamDoge#3610</a></p>
 		</div>
 	</div>
-	
+
 	<script>
-		var container = document.getElementById('landing');
+		const container = document.getElementById('landing');
 		window.onmousemove = function(e){
-			var x = - e.clientX/95,
-				y = - e.clientY/95;
+			const x = -e.clientX / 95,
+					y = -e.clientY / 95;
 			container.style.backgroundPositionX = x + 'px';
 			container.style.backgroundPositionY = y + 'px';
 
@@ -93,12 +94,12 @@
 		gsap.from('.nav h4', {opacity: 0, duration:0.70, y:10})
 		gsap.from('.nav .links a', {opacity: 0, duration:0.40, y:10, stagger: 0.12})
 
-		// intro	
+		// intro
 		gsap.from('#landing .text .header', {opacity: 0, y:-30})
 		gsap.from('#landing .text .title', {opacity: 0, delay: 0.2, y:-30})
 		gsap.from('#landing .text .description', {opacity: 0, delay: 0.4, y:-30})
 		gsap.from('#landing .text .button', {opacity: 0, delay: 0.6, y:-30})
 	</script>
-	<script src="../../Js/script.js"></script>
+	<script src="../js/script.js"></script>
 </body>
 </html>

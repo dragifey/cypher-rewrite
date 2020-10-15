@@ -4,10 +4,9 @@
 html, body{
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
-	margin: 0px;
-	padding: 0px;
-	background-color: #35383D;
-	background: url(bg.png);
+	margin: 0;
+	padding: 0;
+	background: #35383D url(../images/bg.png);
 	background-size: 100%;
 }
 
@@ -97,7 +96,7 @@ html{
 
 /*Active menu*/
 .active{
-  color: var(--purple);  
+  color: var(--purple);
 }
 
 .show{
@@ -128,7 +127,7 @@ html{
   }
   .active{
     color: var(--purple);
-    font-weight: 700;  
+    font-weight: 700;
   }
 }
 
@@ -165,7 +164,7 @@ html{
 	width: calc(100% / 3);
 	overflow: hidden;
 	transition: 0.2s;
-	padding: 40px 0; 
+	padding: 40px 0;
 }
 
 .member:hover{
@@ -194,7 +193,7 @@ html{
 
 .description{
 	opacity: var(--opacity);
-	font-size: var(--regular); 
+	font-size: var(--regular);
 	color: #fff;
 }
 

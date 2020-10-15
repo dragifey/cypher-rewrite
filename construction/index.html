@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>		
-	<link rel="stylesheet" href="const.css">   
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="const.css">
 	<title>In Progress</title>
 </head>
 <body>
@@ -12,16 +12,17 @@
         <div class="wrapper">
             <div class="nav grid">
                 <div>
-                    <a href="#" class="logo">Cypher</a>
+                    <a href="/" class="logo">Cypher</a>
                 </div>
 
                 <div class="menu" id="nav-menu">
                     <ul class="list">
-                        <li class="item"><a href="#home" class="link active">Home</a></li>
-                        <li class="item"><a href="#about" class="link">Commands</a></li>
-                        <li class="item"><a href="#skills" class="link">Dashboard</a></li>
-                        <li class="item"><a href="#work" class="link">Premium</a></li>
-                        <li class="item"><a href="#contact" class="link">Support</a></li>
+                        <li class="item"><a href="/" class="link active">Home</a></li>
+                        <li class="item"><a href="/commands/" class="link">Commands</a></li>
+                        <li class="item"><a href="/premium/" class="link">Premium</a></li>
+<!--                        <li class="item"><a href="#skills" class="link">Dashboard</a></li>-->
+                        <li class="item"><a href="//cypherbot.org/support" class="link">Support</a></li>
+                        <li class="item"><a href="//cypherbot.org/invite" class="link">Invite</a></li>
                     </ul>
                 </div>
 
@@ -48,7 +49,7 @@
 	</div>
 
 <script type="text/javascript">
-	/*===== MENU SHOW =====*/ 
+	/*===== MENU SHOW =====*/
 	const showMenu = (toggleId, navId) =>{
 	    const toggle = document.getElementById(toggleId),
 	    nav = document.getElementById(navId)
@@ -62,18 +63,18 @@
 	showMenu('nav-toggle','nav-menu')
 
 	/*===== ACTIVE AND REMOVE MENU =====*/
-	const navLink = document.querySelectorAll('.link');   
+	const navLink = document.querySelectorAll('.link');
 
 	function linkAction(){
 	  /*Active link*/
 	  navLink.forEach(n => n.classList.remove('active'));
 	  this.classList.add('active');
-	  
+
 	  /*Remove menu mobile*/
 	  const navMenu = document.getElementById('nav-menu')
 	  navMenu.classList.remove('show')
 	}
-	navLink.forEach(n => n.addEventListener('click', linkAction));	
+	navLink.forEach(n => n.addEventListener('click', linkAction));
 </script>
 
 </body>

@@ -31,18 +31,18 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 
 		})
 		btn2.addEventListener('click', () => {
-			img.src = "images/red panda.png";
+			img.src = "images/red_padna.png";
 		})
 		btn3.addEventListener('click', () => {
-			img.src = "images/rac .png";
+			img.src = "images/racc.png";
 		})
 		btn4.addEventListener('click', () => {
 			img.src = "images/jifo.png";
-		})		
+		})
 
 		$(document).on('click', '.buttons a', function(){
 			$(this).addClass('active').siblings().removeClass('active')
-		})	
+		})
 
 
 TweenMax.to(".loader h1", 2, {
