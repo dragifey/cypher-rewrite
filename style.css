@@ -21,6 +21,7 @@ html{
 :root{
 	--purple: #9D65C9;
 	--blurple: #7289DA;
+	--red: #f7584d;
 	--dark-bg: #23272A;
 	--bold: 70px;
 	--medium: 55px;
@@ -442,7 +443,7 @@ li .number{
 
 }
 
-.banner .text a{
+/*.banner .text a{
 	display: inline-block;
 	margin-top: 10px;
 	color: #fff;
@@ -455,6 +456,23 @@ li .number{
 
 .banner .text a:hover{
 	transform: translateY(-2px);
+}
+*/
+
+.banner .text a{
+	display: inline-block;
+	margin-top: 15px;
+	color: #fff;
+	margin-right: 9px;
+	border-radius: 3px;
+	padding: 0.9rem 2rem;
+	background: var(--purple);
+	font-size: 17px;
+	transition: 0.3s;
+}
+
+.banner .text a:hover{
+	padding: 0.9rem 2.4rem;
 }
 
 .banner .image{
@@ -553,6 +571,10 @@ li .number{
 	flex-wrap: wrap;
 }
 
+
+.up-section ul li .tos{
+	color: var(--red);
+}
 .credits{
 	margin-left: 20px;
 	margin-top: 15px;

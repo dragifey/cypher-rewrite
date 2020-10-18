@@ -20,7 +20,7 @@
   	<meta name="og:image:width" content="200">
   	<meta name="og:image:height" content="200">
 
-	<title>Cypher Premium</title>
+	<title>Cypher | Premium</title>
 </head>
 <body>
 
@@ -38,7 +38,7 @@
                     <ul class="list">
                         <li class="item"><a href="/" class="link">Home</a></li>
                         <li class="item"><a href="/commands/" class="link">Commands</a></li>
-                        <li class="item"><a href="/premium/" class="link active">Premium</a></li>
+                        <li class="item"><a href="/premium/" class="link actives">Premium</a></li>
                         <li class="item"><a href="https://cypherbot.org/support" target="_blank" class="link">Support</a></li>
                         <li class="item"><a href="https://cypherbot.org/invite" target="_blank" class="link">Invite</a></li>
                     </ul>
@@ -327,8 +327,8 @@
 	// FIXME unused function
 	function linkAction(){
 	  /*Active link*/
-	  navLink.forEach(n => n.classList.remove('active'));
-	  this.classList.add('active');
+	  navLink.forEach(n => n.classList.remove('actives'));
+	  this.classList.add('actives');
 
 	  /*Remove menu mobile*/
 	  const navMenu = document.getElementById('nav-menu')

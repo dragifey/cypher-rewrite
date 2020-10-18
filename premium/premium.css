@@ -130,7 +130,7 @@ html{
 }
 
 /*Active menu*/
-.active{
+.actives{
   color: var(--purple);  
 }
 
@@ -160,7 +160,7 @@ html{
   .link{
     color: #000;
   }
-  .active{
+  .actives{
     color: var(--purple);
     font-weight: 700;  
   }
