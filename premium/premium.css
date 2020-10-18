@@ -20,6 +20,8 @@ html{
 :root{
 	--dark-grey: #2a2c30;
 	--large: 100px;
+	--red: #f7584d;
+	--dark-bg: #23272A;
 	--yellow: #f5d37a;
 	--pink: #D4708D;
 	--purple: #9D65C9;
@@ -632,12 +634,10 @@ html{
 
 
 /* footer */
-
-
 .footer{
-	background-color: #23272a;
 	box-sizing: border-box;
 	display: flex;
+	background: var(--dark-bg);
 	flex-direction: column;
 	align-items: center;
 
@@ -652,6 +652,8 @@ html{
 
 .up-section .part{
 	display: flex;
+
+	animation: moveRight 0.6s ease-in-out;
 	flex-direction: column;
 }
 
@@ -659,12 +661,18 @@ html{
 	display: flex;
 }
 
+
 .up-section .part .social a{
 	color: #fff;
 	margin-right: 15px;
-	font-size: 20px;
+	font-size: 26px;
+	opacity: .8;
+	transition: 0.2s;
 }
 
+.up-section .part .social a:hover{
+	opacity: 1;
+}
 
 .up-section .part p{
     font-size: 20px;
@@ -673,6 +681,7 @@ html{
     margin-top: 10px;
 }
 .up-section ul{
+	animation: moveUp 0.6s ease-in-out;
 	margin: 0px;
 	padding: 0 20px;
 }
@@ -696,8 +705,7 @@ html{
 }
 
 .up-section ul li a:hover{
-	transform: translateX(-2px);
-	font-weight: 700;
+	opacity: 1;
 }
 
 .up-section ul li p{
@@ -715,6 +723,10 @@ html{
 	flex-wrap: wrap;
 }
 
+
+.up-section ul li .tos{
+	color: var(--red);
+}
 .credits{
 	margin-left: 20px;
 	margin-top: 15px;
@@ -734,7 +746,6 @@ html{
 	color: var(--purple);
 	font-weight: 600;
 }
-
 
 
 /* animation keyframes*/

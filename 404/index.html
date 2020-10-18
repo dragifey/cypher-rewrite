@@ -4,7 +4,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" href="error.css">
@@ -23,14 +22,14 @@
                         <li class="item"><a href="/" class="link">Home</a></li>
                         <li class="item"><a href="/commands" class="link">Commands</a></li>
                         <li class="item"><a href="/premium/" class="link">Premium</a></li>
-                        <li class="item"><a href="//cypherbot.org/support" target="_blank" class="link">Support</a></li>
-                        <li class="item"><a href="https://cypherbot.org/invite" target="_blank" class="link">Invite</a></li>
+                        <li class="item"><a href="//cypherbot.org/support" target="_blank" class="link" rel="noopener">Support</a></li>
+                        <li class="item"><a href="https://cypherbot.org/invite" target="_blank" class="link" rel="noopener">Invite</a></li>
                     </ul>
                 </div>
 
                 <div class="toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
-                </div>
+                </div> rel="noopener"
             </div>
         </div>
 
@@ -53,8 +52,8 @@
 				<a href="#" class="f-logo">Cypher.</a>
 				<p class="description">All Rights reserved <b>&copy; Cypher 2020</b>.</p>
 				<div class="social">
-					<a href="https://top.gg/bot/698234168785764432" target="_blank"><i class="far fa-star"></i></a>
-					<a href="https://discord.gg/sZTzZr7" target="_blank"><i class="far fa-question-circle"></i></a>
+					<a href="https://top.gg/bot/698234168785764432" target="_blank" rel="noopener"><i class="far fa-star"></i></a>
+					<a href="https://discord.gg/sZTzZr7" target="_blank" rel="noopener"><i class="far fa-question-circle"></i></a>
 				</div>
 			</div>
 			<ul>
@@ -65,16 +64,17 @@
 			</ul>
 			<ul>
 				<h1>Recourses</h1>
-				<li><a href="#">Support</a></li>
-				<li><a href="https://cypherbot.org/invite" target="_blank">Add to Discord</a></li>
+				<li><a href="https://cypherbot.org/support" target="_blank" rel="noopener">Support</a></li>
+				<li><a href="https://cypherbot.org/invite" target="_blank" rel="noopener">Add to Discord</a></li>
+				<li><a href="../terms/terms.html" class="tos">Terms of Service</a></li>
 			</ul>
 			<ul>
 				<h1>Extras</h1>
-				<li><a href="#">Team</a></li>
+				<li><a href="/members/">Members</a></li>
 			</ul>
 		</div>
 		<div class="credits">
-			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="https://matthewhayward.co.uk/" target="_blank">MaybeiamDoge#3610</a></p>
+			<p>Website developed by <a href="#">Dragonic#8858</a> &  <a href="https://matthewhayward.co.uk/" rel="noopener" target="_blank">MaybeiamDoge#3610</a></p>
 		</div>
 	</div>
 
@@ -87,18 +87,6 @@
 			container.style.backgroundPositionY = y + 'px';
 
 		}
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
-	<script type="text/javascript">
-		gsap.from('.nav h4', {opacity: 0, duration:0.70, y:10})
-		gsap.from('.nav .links a', {opacity: 0, duration:0.40, y:10, stagger: 0.12})
-
-		// intro
-		gsap.from('#landing .text .header', {opacity: 0, y:-30})
-		gsap.from('#landing .text .title', {opacity: 0, delay: 0.2, y:-30})
-		gsap.from('#landing .text .description', {opacity: 0, delay: 0.4, y:-30})
-		gsap.from('#landing .text .button', {opacity: 0, delay: 0.6, y:-30})
 	</script>
 	<script src="../js/script.js"></script>
 </body>

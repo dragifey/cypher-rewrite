@@ -20,6 +20,8 @@ html{
 :root{
 	--dark-bg: #23272A;
 	--black: 140px;
+	--red: #f7584d;
+ 	--dark-grey: #202024;
 	--bold: 50px;
 	--medium: 55px;
 	--regular: 20px;
@@ -228,9 +230,9 @@ html{
 .footer{
 	box-sizing: border-box;
 	display: flex;
-	background: #202024;
 	flex-direction: column;
 	align-items: center;
+	background: var(--dark-grey);
 
 }
 
@@ -243,6 +245,8 @@ html{
 
 .up-section .part{
 	display: flex;
+
+	animation: moveRight 0.6s ease-in-out;
 	flex-direction: column;
 }
 
@@ -250,12 +254,18 @@ html{
 	display: flex;
 }
 
+
 .up-section .part .social a{
 	color: #fff;
 	margin-right: 15px;
 	font-size: 26px;
+	opacity: .8;
+	transition: 0.2s;
 }
 
+.up-section .part .social a:hover{
+	opacity: 1;
+}
 
 .up-section .part p{
     font-size: 20px;
@@ -264,6 +274,7 @@ html{
     margin-top: 10px;
 }
 .up-section ul{
+	animation: moveUp 0.6s ease-in-out;
 	margin: 0px;
 	padding: 0 20px;
 }
@@ -305,6 +316,10 @@ html{
 	flex-wrap: wrap;
 }
 
+
+.up-section ul li .tos{
+	color: var(--red);
+}
 .credits{
 	margin-left: 20px;
 	margin-top: 15px;

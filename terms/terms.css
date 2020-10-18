@@ -254,7 +254,6 @@ html{
 }
 
 /* footer */
-
 .footer{
 	box-sizing: border-box;
 	display: flex;
@@ -348,8 +347,6 @@ html{
 .up-section ul li .tos{
 	color: var(--red);
 }
-
-
 .credits{
 	margin-left: 20px;
 	margin-top: 15px;
@@ -369,6 +366,7 @@ html{
 	color: var(--purple);
 	font-weight: 600;
 }
+
 
 
 /* responsive */
